@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import Menu from "./components/Menu.jsx"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,11 +17,13 @@ export const metadata = {
   title: "Simple CRUD",
   description: "simple crud app",
 };
-
+// Código comum entre as páginas
+// children é o concetudo das páginas
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Menu />
         {children}
       </body>
     </html>
