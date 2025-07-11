@@ -17,8 +17,8 @@ export const metadata = {
   title: "Simple CRUD",
   description: "simple crud app",
 };
-// Código comum entre as páginas
-// children é o concetudo das páginas
+// Código comum entre as páginas (como um template)
+// children é o conteúdo das páginas
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
