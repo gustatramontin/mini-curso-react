@@ -17,7 +17,7 @@ export default function ListagemDePessoas() {
     }
       return (<>
         <div className="m-3">
-          <button onClick={getPessoas} className="border rounded-xs p-1 hover:bg-gray-200 hover:cursor-pointer">lisar pessoas</button>
+          <button onClick={getPessoas} className="border rounded-xs p-1 hover:bg-gray-200 hover:cursor-pointer">listar pessoas</button>
         </div>
         <div className="m-3 flex flex-col">
           {
